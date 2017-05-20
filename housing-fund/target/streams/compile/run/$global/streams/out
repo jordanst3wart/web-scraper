@@ -1,10 +1,14 @@
-[0m[[0minfo[0m] [0mRunning HelloWorld [0m
+[0m[[0minfo[0m] [0mRunning crawler.StartingPoint [0m
 [0m[[0mdebug[0m] [0mWaiting for threads to exit or System.exit to be called.[0m
 [0m[[0mdebug[0m] [0m  Classpath:[0m
-[0m[[0mdebug[0m] [0m	/home/jordan/Documents/functional programming principles/example/target/scala-2.10/classes[0m
-[0m[[0mdebug[0m] [0m	/home/jordan/.sbt/boot/scala-2.10.6/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	/home/jordan/Documents/scala/housing-fund/housing-fund/target/scala-2.11/classes[0m
+[0m[[0mdebug[0m] [0m	/home/jordan/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar[0m
+[0m[[0mdebug[0m] [0m	/home/jordan/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.0.jar[0m
+[0m[[0mdebug[0m] [0m	/home/jordan/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar[0m
+[0m[[0mdebug[0m] [0m	/home/jordan/.ivy2/cache/org.jsoup/jsoup/jars/jsoup-1.8.3.jar[0m
+[0m[[0mdebug[0m] [0m	/home/jordan/.ivy2/cache/commons-validator/commons-validator/jars/commons-validator-1.5.1.jar[0m
+[0m[[0mdebug[0m] [0m	/home/jordan/.ivy2/cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.9.2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/jordan/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/jordan/.ivy2/cache/commons-collections/commons-collections/jars/commons-collections-3.2.2.jar[0m
+[0m[[0mdebug[0m] [0m	/home/jordan/.ivy2/cache/commons-digester/commons-digester/jars/commons-digester-1.8.1.jar[0m
 [0m[[0mdebug[0m] [0mWaiting for thread run-main-0 to terminate.[0m
-[0m[[0mdebug[0m] [0m	Thread run-main-0 exited.[0m
-[0m[[0mdebug[0m] [0mInterrupting remaining threads (should be all daemons).[0m
-[0m[[0mdebug[0m] [0mSandboxed run complete..[0m
-[0m[[0mdebug[0m] [0mExited with code 0[0m
