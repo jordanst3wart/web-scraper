@@ -18,6 +18,8 @@ class Indexer(supervisor: ActorRef) extends Actor {
       supervisor ! IndexFinished(url, content.urls)
   }
 
+
+  // don't need this
   @throws[Exception](classOf[Exception])
   override def postStop(): Unit = {
     super.postStop()

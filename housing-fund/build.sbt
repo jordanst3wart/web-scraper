@@ -6,10 +6,11 @@ version := "1.0"
 scalaVersion := "2.11.7"
 
 libraryDependencies ++= {
-  val akkaV       = "2.4.0"
   Seq(
-    "com.typesafe.akka" %% "akka-actor"                           % akkaV,
+    "com.typesafe.akka" %% "akka-actor"                           % "2.4.0",
     "org.jsoup"         % "jsoup"                                 % "1.8+",
-    "commons-validator" % "commons-validator"                     % "1.5+"
+    "commons-validator" % "commons-validator"                     % "1.5+",
+    "org.scalatest"     %% "scalatest"                            % "3.0.1"     % "test",
+    "org.junit"             % "junit"                                 % "4.12"      % "test"
   )
 }
