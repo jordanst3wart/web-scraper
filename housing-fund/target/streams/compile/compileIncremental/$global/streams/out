@@ -1,15 +1,32 @@
-[0m[[0mdebug[0m] [0m[naha] [0m
-[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
-[0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	added: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] [0m
-[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
-[0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
-[0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
-[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set()[0m
+[debug] [naha] 
+[debug] [naha] Initial source changes: 
+[debug] [naha] 	removed:Set()
+[debug] [naha] 	added: Set()
+[debug] [naha] 	modified: Set(/home/jordan/Documents/scala/housing-fund/housing-fund/src/main/scala/parser/Parser.scala)
+[debug] [naha] Invalidated products: Set()
+[debug] [naha] External API changes: API Changes: Set()
+[debug] [naha] Modified binary dependencies: Set()
+[debug] [naha] Initial directly invalidated sources: Set(/home/jordan/Documents/scala/housing-fund/housing-fund/src/main/scala/parser/Parser.scala)
+[debug] [naha] 
+[debug] [naha] Sources indirectly invalidated by:
+[debug] [naha] 	product: Set()
+[debug] [naha] 	binary dep: Set()
+[debug] [naha] 	external source: Set()
+[debug] All initially invalidated sources: Set(/home/jordan/Documents/scala/housing-fund/housing-fund/src/main/scala/parser/Parser.scala)
+[debug] [naha] Initial set of included nodes: Set(/home/jordan/Documents/scala/housing-fund/housing-fund/src/main/scala/parser/Parser.scala)
+[info] Compiling 1 Scala source to /home/jordan/Documents/scala/housing-fund/housing-fund/target/scala-2.11/classes...
+[debug] Getting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.11.7
+[debug] Getting org.scala-sbt:compiler-interface:0.13.13:component from component compiler for Scala 2.11.7
+[debug] Running cached compiler 6c57bcf8, interfacing (CompilerInterface) with Scala compiler version 2.11.7
+[debug] Calling Scala compiler with arguments  (CompilerInterface):
+[debug] 	-bootclasspath
+[debug] 	/usr/lib/jvm/java-8-openjdk/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk/jre/classes:/home/jordan/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.7.jar
+[debug] 	-classpath
+[debug] 	/home/jordan/Documents/scala/housing-fund/housing-fund/target/scala-2.11/classes:/home/jordan/.ivy2/cache/com.typesafe.akka/akka-actor_2.11/jars/akka-actor_2.11-2.4.0.jar:/home/jordan/.ivy2/cache/com.typesafe/config/bundles/config-1.3.0.jar:/home/jordan/.ivy2/cache/org.jsoup/jsoup/jars/jsoup-1.8.3.jar:/home/jordan/.ivy2/cache/commons-validator/commons-validator/jars/commons-validator-1.5.1.jar:/home/jordan/.ivy2/cache/commons-beanutils/commons-beanutils/jars/commons-beanutils-1.9.2.jar:/home/jordan/.ivy2/cache/commons-logging/commons-logging/jars/commons-logging-1.2.jar:/home/jordan/.ivy2/cache/commons-collections/commons-collections/jars/commons-collections-3.2.2.jar:/home/jordan/.ivy2/cache/commons-digester/commons-digester/jars/commons-digester-1.8.1.jar
+[debug] Scala compilation took 2.440231547 s
+[debug] [naha] New invalidations:
+[debug] [naha] 	Set()
+[debug] [naha] Initial set of included nodes: Set()
+[debug] [naha] Previously invalidated, but (transitively) depend on new invalidations:
+[debug] [naha] 	Set()
+[debug] [naha] All newly invalidated sources after taking into account (previously) recompiled sources:Set()
