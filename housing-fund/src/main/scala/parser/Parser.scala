@@ -2,9 +2,9 @@ package parser
 
 import org.jsoup.nodes.Document
 import org.jsoup.select.Elements
-
 import java.text.NumberFormat
 
+import scala.annotation.tailrec
 import scala.collection.JavaConversions._
 
 /**
@@ -20,16 +20,27 @@ class Parser {
     "pears" -> "hi"
   )
 
-  private def dollarToInt(string: String): Int = {
-    var newString: String = ""
-    List[Char]
-    
 
-    //if (value.head.isNumeric) {
-    //  newString.add() = ""
-    //}
+  def dollarToInt(string: String): Int = {
+    // removes '$' and ',' from the list of chars
+    @tailrec
+    def iter(list: List[Char], newList: List[Char]): List[Char] = {
+      if(list.isEmpty){
+        newList
+      }
+      else if (!(list.head == '$' || list.head == ',')){
+        //newList.+:(list.head) // broken here
+        newList.add(0,list.head)
+        iter(list.tail, newList)
+      }
+      else {
+        iter(list.tail,newList)
+      }
+    }
 
-    0
+    val string2 = iter(string.toList,"".toList) // idk how to create List[Char] lol
+      string.toString().
+      toInt
   }
 
 
@@ -37,21 +48,19 @@ class Parser {
   def getPrices(doc: Document): List[Int] = {
     val elements: Elements = doc.getElementsByClass(HTMLclasses("price"))
     val prices: List[Int] = List()
-    val numberFormat = NumberFormat.getCurrencyInstance
-
-
-
 
     // i would like to use a map but... idk how
     elements.foreach { element =>
       println(element.html())
+      println(dollarToInt(element.html()))
 
       // convert some dollar value to int
       prices.add(
+        dollarToInt(element.html())
         // parse can throw, but...
-        numberFormat.parse(
-          element.html()
-        ).intValue()
+        //numberFormat.parse(
+        //  element.html()
+        //).intValue()
       )
     }
 

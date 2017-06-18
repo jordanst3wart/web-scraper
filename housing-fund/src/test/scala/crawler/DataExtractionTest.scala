@@ -15,10 +15,20 @@ import org.junit
 /**
   * Created by jordan on 17/06/17.
   */
-class DataExtractionTest extends FunSuite {
+class ParserTest extends FunSuite {
+
+
+  // internal method tests, I might need to test stuff
+
+  test("dollar value string to int"){
+    val parser = new Parser()
+    assert(parser.dollarToInt("$1,000") === 1000)
+    assert(parser.dollarToInt("") === 0)
+    assert(parser.dollarToInt("$1,000,000") === 1000000)
+  }
+
 
   // test page
-
   test("full page") {
     assert(true)
   }
