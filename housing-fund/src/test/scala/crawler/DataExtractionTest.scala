@@ -35,7 +35,7 @@ class ParserTest extends FunSuite {
 
   test("price") {
     val parser = new Parser()
-    val input = new File("/home/jordan/Documents/scala/housing-fund/housing-fund/src/test/scala/crawler/price.html")
+    val input = new File("src/test/scala/crawler/price.html")
     val doc = Jsoup.parse(input, "UTF-8", "http://example.com/")
     val prices = parser.getPrices(doc)
 
@@ -64,13 +64,13 @@ class ParserTest extends FunSuite {
     assert(postcode === "2000")
     assert(state === "NSW")
     assert(locality === "Sydney")
-    assert(streetAddress === "5609/93 Liverpool Street")
+    assert(streetAddress === "5609/93 Lily Street")
   }
 
   test("geocoordinates"){
     val latitude: Double = 0
     val longitude: Double = 0
-    assert(latitude === -33.8642921)
+    assert(latitude === -313.8642921)
     assert(longitude === 151.201553)
   }
 
